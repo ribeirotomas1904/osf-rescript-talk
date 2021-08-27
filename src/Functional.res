@@ -105,36 +105,3 @@
 //   Js.log(true)
 // }
 
-// a block is an expression, and has a scope -----------------------------------
-
-// let increase = x => x + 1
-
-// let a = increase(1)
-
-// let b = {
-//   let decrease = x => x - 1
-//   decrease(3)
-// }
-// Js.log(b)
-
-// in javascript, IIFE is the ugly solution (Immediately invoked function expression)
-// -----------------------------------------------------------------------------
-
-// %%raw(`
-//     let c = (() => {
-//         let decrease = x => x - 1
-//         return decrease(3)
-//     })();
-//     console.log(c)
-// `)
-
-// you have that option in rescript too, but why would you? --------------------
-
-// let d = (
-//   () => {
-//     let decrease = x => x - 1
-//     decrease(3)
-//   }
-// )()
-// Js.log(d)
-
