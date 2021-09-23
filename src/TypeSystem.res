@@ -75,17 +75,15 @@
 
 // Sound type system
 
-// open Belt
-
-// let a = [1]
-// let b = a[1]
+let a = [1]
+let b = a[1]
 
 // Modeling async data
 
 // type user = {name: string}
-// type async_data<'a> = Idle | Loading | Done(result<'a, string>)
+// type async_data<'a> = Idle | Loading | Done('a)
 
-// let (user: async_data<user>, setUser) = React.useState(_ => Idle)
+// let (user: async_data<result<user, string>>, setUser) = React.useState(_ => Idle)
 
 // let message = switch user {
 // | Idle => "aperte o botão para carregar"
@@ -103,4 +101,3 @@
 // @module("./interop.js") external myHelloFunction2: string => string = "default"
 
 // myHelloFunction2("nathan")->Js.log
-

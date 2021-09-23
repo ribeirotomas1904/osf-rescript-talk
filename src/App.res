@@ -1,4 +1,11 @@
+module Test = {
+  @react.component
+  let make = (~children) => {
+    children
+  }
+}
+
 @react.component
 let make = () => {
-  <div> {React.string("hello rescript")} </div>
+  <div> <Test> <div> {React.string("ola")} </div> </Test> </div>
 }
